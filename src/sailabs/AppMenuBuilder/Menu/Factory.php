@@ -1,6 +1,6 @@
 <?php
 /**
- *  Menu Item
+ *  Menu Factory
  *
  *  @author Rohan Sakhale <rs@saiashirwad.com>
  */

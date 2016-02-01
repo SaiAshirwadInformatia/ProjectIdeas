@@ -1,10 +1,10 @@
 
 {
-	"name" : "sailabs/app-menu-builder",
+	"name" : "saiashirwadinformatia/app-menu-builder",
 	"type" : "library",
 	"description" : "Build menu more easily with configurations",
 	"keywords" : ["menu builder", "application menu"],
-	"homepage" : "http://saiashirwad.in",
+	"homepage" : "http://saiashirwad.com",
 	"license" : "MIT",
 	"authors" : [
 		{
@@ -15,7 +15,7 @@
 	],
 	"autoload" : {
 		"psr-0" : {
-			"sailabs\\" : "src"
+			"saiashirwadinformatia\\" : "src"
 		}
 	},
 	"require" : {

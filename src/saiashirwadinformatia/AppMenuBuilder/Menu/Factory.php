@@ -4,7 +4,7 @@
  *
  *  @author Rohan Sakhale <rs@saiashirwad.com>
  */
-namespace sailabs\AppMenuBuilder\Menu;
+namespace saiashirwadinformatia\AppMenuBuilder\Menu;
 
 abstract class MenuFactory
 {

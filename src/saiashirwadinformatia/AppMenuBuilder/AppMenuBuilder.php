@@ -4,7 +4,7 @@
  *
  *  @author Rohan Sakhale <rs@saiashirwad.com>
  */
-namespace sailabs\AppMenuBuilder;
+namespace saiashirwadinformatia\AppMenuBuilder;
 
 class AppMenuBuilder
 {

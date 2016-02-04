@@ -156,5 +156,25 @@ abstract class AbstractItem implements ItemInterface
         return $this->children;
     }
 
+    /**
+     * @return mixed
+     */
     abstract public function getIconHTML();
+
+    /**
+     * @return mixed
+     */
+    public function hasChildren()
+    {
+        return $this->children && $this->children->size() > 0;
+    }
+
+    /**
+     * @param $currentUrl
+     */
+    public function isActive($currentUrl)
+    {
+        return $this->url && $this->url != '#'
+        && strpos($currentUrl, $this->url) !== false;
+    }
 }

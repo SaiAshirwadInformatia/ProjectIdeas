@@ -8,21 +8,49 @@ namespace saiashirwadinformatia\AppMenuBuilder\Menu\Factory;
 
 abstract class MenuFactory
 {
-    const JSON_CONFIG = 'JSONConfigFactory';
 
-    const PHP_CONFIG = 'PHPConfigFactory';
+    public $current_url;
 
-    const DB_CONFIG = 'DBConfigFactory';
-
-    public function build($config, $type = null)
+    public function prepareMenu(ItemList $list)
     {
-        if (!$type) {
-            $type = self::PHP_CONFIG;
+        foreach ($menuList as $val => $node) {
+            if (!empty($node['url'])) {
+                $active = (strpos($page, $node['url']) !== false) ? "active" : " ";
+            } else {
+                $active = '';
+            }
+            // Running array for Main parent links
+            if (!empty($node['childs'])) {
+                $html .= " <li class='treeview " . $active . "'>
+			<a ";
+                if (!empty($node['url'])) {
+                    $html .= "href='" . $core->basehref . '/' . $node['url'] . "'";
+                } else {
+                    $html .= "href='#'";
+                }
+                $html .= ">";
+                if (isset($node['icon']) and $node['icon']) {
+                    $html .= $icons->$node['icon'];
+                }
+                if (isset($node['label'])) {
+                    $html .= "<span> " . $node['label'] . "</span>" . '<i class="fa fa-angle-left pull-right"></i>' . "</a>";
+                }
+                // Running submenu
+                $html .= '<ul class="treeview-menu">';
+                $html .= buildMenu($node['childs']);
+                $html .= "</ul>";
+            } else {
+                if (isset($node['label'])) {
+                    $html .= "<li class='" . $active . "' ><a href='" . $core->basehref .
+                    '/' . $node['url'] . "'>";
+                    if (isset($node['icon']) and $node['icon']) {
+                        $html .= $icons->$node['icon'];
+                    }
+                    $html .= "<span> " . $node['label'] . "</span></a>";
+                }
+            }
+
+            $html .= "</li>";
         }
-        $className = __NAMESPACE__ . '\\' . $type;
-        if (!class_exists($className)) {
-            throw new \InvalidArgumentException('Missing Menu Factory class.');
-        }
-        return $className($config);
     }
 }

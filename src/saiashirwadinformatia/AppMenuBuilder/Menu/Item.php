@@ -42,4 +42,8 @@ class Item extends AbstractItem
         $this->children->addObject($key, $item);
     }
 
+    public function getIconHTML()
+    {
+        return '<i class="' . $this->icon . '"></i>';
+    }
 }

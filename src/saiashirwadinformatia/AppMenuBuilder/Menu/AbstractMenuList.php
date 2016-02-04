@@ -36,4 +36,17 @@ abstract class AbstractMenuList
     {
         $this->data[$key] = $item;
     }
+
+    public function size()
+    {
+        return count($this->data);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMenu()
+    {
+        return $this->data;
+    }
 }

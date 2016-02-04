@@ -14,14 +14,7 @@ class AppMenuBuilder
 
     public function __construct()
     {
-        $this->baseurl = 'http://localhost/AppMenuBuilder/';
-        // Sample menu
-        $this->menu = (include 'sampleMenu.php');
-    }
-
-    public function clear()
-    {
-        $this->menu = [];
+        $this->menu = ItemList();
     }
 
     /**

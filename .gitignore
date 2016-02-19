@@ -3,14 +3,11 @@
 .buildpath
 .settings/*
 .*~
-output/*
-docs/api/*
-vendor/*
-!vendor/README
 composer.lock
-*~
 composer.phar
-/vendor/
+vendor
+*~
+bower_components
 
 # Commit your application's lock file http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file
 # You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file

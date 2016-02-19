@@ -6,9 +6,14 @@
  */
 namespace saiashirwadinformatia\AppMenuBuilder\Menu\Factory;
 
+use saiashirwadinformatia\AppMenuBuilder\Menu\ItemList;
+
 class PHPConfigFactory extends MenuFactory implements MenuFactoryInterface
 {
 
+    /**
+     * @param $config
+     */
     public function build($config)
     {
         if (!file_exists($config)) {
@@ -16,5 +21,9 @@ class PHPConfigFactory extends MenuFactory implements MenuFactoryInterface
         }
         $itemList = new ItemList();
         $menuList = include $config;
+        foreach ($menuList as $menuKey => $menuArr) {
+            $this->addItem($menuKey, $menuArr, $itemList);
+        }
+        return $itemList;
     }
 }

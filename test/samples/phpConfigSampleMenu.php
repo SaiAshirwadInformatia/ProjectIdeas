@@ -33,17 +33,17 @@ return [
         'icon'     => 'fa-adjust',
         'url'      => 'http://localhost/AppMenuBuilder/level2',
         'children' => [
-            'level3.1' => [
+            'level31' => [
                 'label'    => 'Level 3.1',
                 'icon'     => 'fa-circle-o',
                 'url'      => '#baseurl#level3.1',
                 'children' => [
-                    'level3.1.1' => [
+                    'level311' => [
                         'label' => 'Level 3.1.1',
                         'icon'  => 'fa-circle-o',
                         'url'   => '#baseurl#level3.1.1',
                     ],
-                    'level3.1.2' => [
+                    'level312' => [
                         'label' => 'Level 3.1.2',
                         'icon'  => 'fa-circle-o',
                         'url'   => '#baseurl#level3.1.2',

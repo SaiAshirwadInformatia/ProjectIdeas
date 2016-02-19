@@ -6,25 +6,29 @@
  */
 namespace saiashirwadinformatia\AppMenuBuilder\Menu\Builder;
 
-class SimpleBuilder implements MenuBuilderInterface
+use saiashirwadinformatia\AppMenuBuilder\Menu\AbstractItem;
+use saiashirwadinformatia\AppMenuBuilder\Menu\AbstractMenuList;
+
+class SimpleBuilder extends AbstractBuilder implements MenuBuilderInterface
 {
 
-    public $parentClass;
+    public function __construct($currentUrl = '', $menuClass = '', $parentClass = '', $childClass = '', $activeClass = '')
+    {
+        parent::__construct($currentUrl, $menuClass, $parentClass, $childClass, $activeClass);
+    }
 
-    public $childClass;
-
-    public $activeClass;
-
-    public $currentUrl;
-
+    /**
+     * @param  AbstractItem $item
+     * @param  $className
+     * @return mixed
+     */
     private function itemElement(AbstractItem $item, $className = '')
     {
-        $html = "<li class='" . $className . "' >
-            <a href='" . $item->getUrl() . "'>";
-        if ($item->icon) {
+        $html = '<li class="' . $className . '" ><a href="' . $item->getUrl() . '">';
+        if ($item->getIcon()) {
             $html .= $item->getIconHTML();
         }
-        $html .= "<span> " . $item->label . "</span>";
+        $html .= "<span> " . $item->getLabel() . "</span>";
         if ($item->hasChildren()) {
             $html .= '<i class="fa fa-angle-left pull-right"></i>';
         }
@@ -34,44 +38,33 @@ class SimpleBuilder implements MenuBuilderInterface
             $html .= $this->buildMenu($item->getChildren());
             $html .= '</ul>';
         }
+        $html .= '</li>';
         return $html;
     }
 
     /**
-     * @param ItemList $items
+     * @param  AbstractMenuList $items
      * @return mixed
      */
-    private function buildMenu(ItemList $items)
+    public function buildMenu(AbstractMenuList $items)
     {
         $html = '';
         $active = '';
         if (count($items->size()) > 0) {
             $menuList = $items->getMenu();
-            foreach ($menuList as $key => $menu) {
-                if ($menu->isActive($currentUrl)) {
+            foreach ($menuList as $key => $item) {
+                if ($item->isActive($this->currentUrl)) {
                     $active = $this->activeClass;
                 }
                 if ($item->hasChildren()) {
                     $html .= $this->itemElement($item, $this->parentClass . ' ' . $active);
                 } else {
-                    if ($menu->label) {
+                    if ($item->getLabel()) {
                         $html .= $this->itemElement($item, $active);
                     }
                 }
             }
         }
         return $html;
-    }
-
-    /**
-     * @param ItemList $items
-     */
-    public function build(ItemList $items, $parentClass = '', $childClass = '', $activeClass = '', $currentUrl = '')
-    {
-        $this->parentClass = $parentClass;
-        $this->childClass = $childClass;
-        $this->activeClass = $activeClass;
-        $this->currentUrl = $currentUrl;
-        return '<ul class="sidebar-menu">' . self::buildMenu($items) . '</ul>';
     }
 }

@@ -8,49 +8,45 @@ namespace saiashirwadinformatia\AppMenuBuilder\Menu\Factory;
 
 abstract class MenuFactory
 {
+    protected $base_url;
+    protected $current_url;
 
-    public $current_url;
-
-    public function prepareMenu(ItemList $list)
+    public function __construct($base_url = '', $current_url = '')
     {
-        foreach ($menuList as $val => $node) {
-            if (!empty($node['url'])) {
-                $active = (strpos($page, $node['url']) !== false) ? "active" : " ";
-            } else {
-                $active = '';
+        $this->base_url = $base_url;
+        $this->current_url = $current_url;
+        if ($this->base_url) {
+            if (strrpos($this->base_url, '\\') !== strlen($this->base_url)) {
+                $this->base_url .= '\\';
             }
-            // Running array for Main parent links
-            if (!empty($node['childs'])) {
-                $html .= " <li class='treeview " . $active . "'>
-			<a ";
-                if (!empty($node['url'])) {
-                    $html .= "href='" . $core->basehref . '/' . $node['url'] . "'";
-                } else {
-                    $html .= "href='#'";
-                }
-                $html .= ">";
-                if (isset($node['icon']) and $node['icon']) {
-                    $html .= $icons->$node['icon'];
-                }
-                if (isset($node['label'])) {
-                    $html .= "<span> " . $node['label'] . "</span>" . '<i class="fa fa-angle-left pull-right"></i>' . "</a>";
-                }
-                // Running submenu
-                $html .= '<ul class="treeview-menu">';
-                $html .= buildMenu($node['childs']);
-                $html .= "</ul>";
-            } else {
-                if (isset($node['label'])) {
-                    $html .= "<li class='" . $active . "' ><a href='" . $core->basehref .
-                    '/' . $node['url'] . "'>";
-                    if (isset($node['icon']) and $node['icon']) {
-                        $html .= $icons->$node['icon'];
-                    }
-                    $html .= "<span> " . $node['label'] . "</span></a>";
-                }
-            }
-
-            $html .= "</li>";
         }
+    }
+
+    /**
+     * @param $menuKey
+     * @param $menuArr
+     * @param $itemList
+     */
+    protected function addItem($menuKey, $menuArr, &$itemList)
+    {
+        if (!isset($menuArr['label']) || !isset($menuArr['url'])) {
+            throw new \Exception('Menu item array element invalid for key: ' . $menuKey);
+        }
+        $menuArr['url'] = str_replace('#basehref#', $this->base_url, $menuArr['url']);
+        $item = new Item($menuKey, $menuArr['label'], $menuArr['url']);
+        $children = new ItemList();
+        $item->addChildren($children);
+        if (isset($menuArr['icon'])) {
+            $item->setIcon($menuArr['icon']);
+        }
+        if (isset($menuArr['permission'])) {
+            $item->setIcon('permission');
+        }
+        if (isset($menuArr['children'])) {
+            foreach ($menuArr['children'] as $childKey => $childArr) {
+                $this->addItem($childKey, $childArr, $children);
+            }
+        }
+        $itemList->addObject($menuKey, $item);
     }
 }

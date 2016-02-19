@@ -22,7 +22,7 @@ if (!defined('SAI_APPMENUBUILDER_PATH')) {
 /**
  *     Load Third Party Classes
  */
-if (file_exists('vendor' . DS . 'autoload.php')) {
-    require_once 'vendor/autoload.php';
+if (file_exists(SAI_APPMENUBUILDER_PATH . 'vendor' . DS . 'autoload.php')) {
+    require_once SAI_APPMENUBUILDER_PATH . 'vendor/autoload.php';
 }
-require_once 'src/Autoload.php';
+require_once SAI_APPMENUBUILDER_PATH . 'src/Autoload.php';

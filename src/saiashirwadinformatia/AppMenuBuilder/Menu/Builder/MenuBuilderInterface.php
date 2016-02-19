@@ -6,8 +6,10 @@
  */
 namespace saiashirwadinformatia\AppMenuBuilder\Menu\Builder;
 
+use saiashirwadinformatia\AppMenuBuilder\Menu\AbstractMenuList;
+
 interface MenuBuilderInterface
 {
 
-    public function build(ItemList $items);
+    public function build(AbstractMenuList $items);
 }

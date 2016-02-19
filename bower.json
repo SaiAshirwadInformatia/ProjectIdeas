@@ -1,0 +1,24 @@
+{
+  "name": "App Menu Builder",
+  "version": "1.0.0",
+  "authors": [
+    "Sai Ashirwad Informatia (info@saiashirwad.com)"
+  ],
+  "description": "Simple menu builder",
+  "license": "MIT",
+  "homepage": "http://saiashirwad.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "admin-lte": "2.*"
+  },
+  "resolutions": {
+    "jquery": ">=1.9.11",
+    "bootstrap": "3.*"
+  }
+}

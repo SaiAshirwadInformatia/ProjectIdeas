@@ -6,10 +6,10 @@
  */
 namespace saiashirwadinformatia\AppMenuBuilder\Menu\Factory;
 
-abstract class DBConfigFactory implements MenuFactoryInterface
+abstract class DBConfigFactory extends MenuFactory implements MenuFactoryInterface
 {
 
-    public static function build($config)
+    public function build($config)
     {
         if (!file_exists($config)) {
             throw new \InvalidArgumentException('Config file (' . $config . ') not found');

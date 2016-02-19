@@ -8,6 +8,10 @@ spl_autoload_register(
             if (file_exists($classpath)) {
                 require_once $classpath;
                 break;
+            } else {
+
+                echo "\n";
+                echo $classname;die();
             }
         }
     }

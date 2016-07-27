@@ -14,4 +14,4 @@ Sai Ashirwad Informatia <www.saiashirwad.com>
 
 ## License
 
-Open Content License
+GNU GENERAL PUBLIC LICENSE

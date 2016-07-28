@@ -2,7 +2,7 @@
 
 Categories in WordPress help various posts into proper categorization. This document highlights the REST services that would be available for Categories REST API
 
-## Contents
+## REST API Contents
 
 1. Category Meta Information
 1. Create Category

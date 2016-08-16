@@ -11,6 +11,7 @@ This application will serve as a recommendation application that will provide jo
 1. Filter based periodic notification alerts
 1. Android application
 1. Chrome extension - for jobs notification
+1. Company listing and their reviews > Like glassdoor
 
 ## Technologies
 

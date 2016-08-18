@@ -1,0 +1,27 @@
+{
+  "name": "Project Ideas",
+  "authors": [
+    "Sai Ashirwad Informatia <connect@saiashirwad.com>"
+  ],
+  "description": "Open Source your ideas",
+  "main": "",
+  "keywords": [
+    "project",
+    "ideas",
+    "open",
+    "source"
+  ],
+  "license": "MIT",
+  "homepage": "http://saiashirwad.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}

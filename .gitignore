@@ -69,3 +69,6 @@ bower_components
 .bower-cache
 .bower-registry
 .bower-tmp
+
+# Project Idea Site #
+js/vendor/

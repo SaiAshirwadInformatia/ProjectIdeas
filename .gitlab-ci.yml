@@ -3,7 +3,7 @@
 image: ruby:2.3
 before_script:
   - apt-get update
-  - apt-get install nodejs npm
+  - apt-get install nodejs npm -y
   - npm install -g bower
 
 test:

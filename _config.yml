@@ -23,6 +23,8 @@ url: "https://saiashirwadinformatia.gitlab.io/ProjectIdeas" # the base hostname 
 twitter_username: SaiAshirwadInfo
 github_username:  SaiAshirwadInformatia
 gitlab_username: SaiAshirwadInformatia
+disqus: saiprojectideas
+google_analytics: 'UA-54302492-16'
 
 # Build settings
 markdown: kramdown

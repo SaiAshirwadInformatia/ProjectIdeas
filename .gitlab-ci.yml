@@ -23,6 +23,7 @@ test:
 pages:
   stage: deploy
   script:
+  - bower install --allow-root
   - gem install jekyll
   - gem install bundler
   - bundle install

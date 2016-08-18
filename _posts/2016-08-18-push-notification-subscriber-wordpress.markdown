@@ -1,5 +1,9 @@
-# Push Notification Subscriber WordPress
-
+---
+layout: post
+title:  "Push Notififcation Subscriber WordPress"
+date:   2016-08-18 10:20:03 +0530
+categories: wordpress rest push
+---
 Often there are several notification mechanism, within which wordpress users from a device can subscribe to wordpress for enhanced notification experience.
 
 ## Push Notifications

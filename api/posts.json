@@ -1,0 +1,12 @@
+---
+---
+[
+	{% for post in site.posts %}
+	{
+		"id": "{{ post.id }}",
+		"title": "{{ post.title }}",
+		"path": "{{ post.path }}",
+		"url": "{{ site.url }}{{ post.url }}"
+	}
+	{% endfor %}
+]

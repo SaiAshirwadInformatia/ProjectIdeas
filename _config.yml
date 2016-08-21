@@ -20,6 +20,7 @@ description: > # this means to ignore newlines until "baseurl:"
   a new Open Source that benefits the community
 baseurl: "/ProjectIdeas" # the subpath of your site, e.g. /blog
 url: "https://saiashirwadinformatia.gitlab.io/ProjectIdeas" # the base hostname & protocol for your site
+gitlab_url: "https://gitlab.com/SaiAshirwadInformatia/ProjectIdeas"
 twitter_username: SaiAshirwadInfo
 github_username:  SaiAshirwadInformatia
 gitlab_username: SaiAshirwadInformatia
@@ -30,4 +31,6 @@ google_analytics: 'UA-54302492-16'
 markdown: kramdown
 
 exclude:
+  - "Gemfile"
   - "bower.json"
+  - "js/vendor/owl.carousel/docs_src"

@@ -1,0 +1,27 @@
+<div class="main-container">
+
+	<div id="idea-thoughts">
+		<ul>
+			<li><i class="icon fa fa-lightbulb-o fa-2x"></i> <span class="idea">Have an idea?</span></li>
+			<li><i class="icon fa fa-users fa-2x"></i> <span class="idea">Let it grow with community</span></li>
+			<li><i class="icon fa fa-comment-o fa-2x"></i> <span class="idea">Open Source your Idea</span></li>
+		</ul>
+	</div>
+	
+	<a class="main-gitlab-fork" href="{{ site.gitlab_url }}/forks/new"><img src="{{ site.baseurl }}/images/gitlab-fork.png" /></a>
+	<a class="main-gitlab-star" href="{{ site.gitlab_url }}/toggle_star"><img src="{{ site.baseurl }}/images/gitlab-star.png" /></a>
+
+	<img src="{{ site.baseurl }}/images/big-back-1.jpg" style="width: 100%" class="img-responsive" />
+</div>
+{% raw %}
+<script>
+$(function(){
+	$('#idea-thoughts').unslider({
+		autoplay: true,
+		nav: false,
+		arrows: false,
+		animation: 'fade'
+	});
+});
+</script>
+{% endraw %}

@@ -1,16 +1,18 @@
+---
+---
 <!doctype html>
 <html>
 	<head>
 		{% include head.html %}
 	</head>
 	<body>
+		{% include idea-back.html %}
 		{% include nav.html %}
-
-		<div class="container" style="margin-top: 50px">
+		
+		{% include main-container.html %}
+		<div class="container">
 		{{ content }}
-
-		{% include footer.html %}
 		</div>
-	{% include scripts.html %} 
+		{% include scripts.html %}
 	</body>
 </html>

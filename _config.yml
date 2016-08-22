@@ -36,3 +36,14 @@ exclude:
   - "js/vendor/owl.carousel/docs_src"
 
 excerpt_separator: <!--more-->
+
+sitemap:
+    file: "/sitemap.xml"
+    exclude:
+        - "/atom.xml"
+        - "/feed.xml"
+        - "/feed/index.xml"
+    include_posts:
+        - "/posts/"
+    change_frequency_name: "change_frequency"
+    priority_name: "priority"

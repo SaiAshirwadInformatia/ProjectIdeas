@@ -1,6 +1,8 @@
 {% include analytics.html %}
-<div class="container-fluid">
-	<footer>
-		<p>&copy; 2016 {{ site.title }} </p>
-	</footer>
-</div>
+<footer>
+	<p>&copy; 2016 {{ site.title }} </p>
+	<div class="auto-generated">
+	This page is generated from <a href="{{ site.gitlab_url }}/blob/master/{{ page.path }}">a public file on GitLab.com</a> -  merge requests with improvements are <a href="{{ site.gitlab_url }}/blob/master/CONTRIBUTING.md">very welcome</a>. <a href="http://opensource.org/licenses/GPL-3.0" target="_blank"><img src="https://img.shields.io/badge/license-GNU%20GPL%20version%203-lightgrey.svg?style=flat-square" alt="License (GPL version 3)" title="License (GPL version 3)" /></a>
+	</div>
+</footer>
+

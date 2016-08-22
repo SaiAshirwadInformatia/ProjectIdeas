@@ -4,6 +4,10 @@ image: starefossen/ruby-node:2-5
 before_script:
   - npm install -g bower
 
+cache:
+  paths:
+    - js/vendor
+
 test:
   stage: test
   script:

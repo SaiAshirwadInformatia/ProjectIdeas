@@ -13,8 +13,11 @@ $base-line-height: 1.5;
 $spacing-unit:     30px;
 
 $text-color:       #111;
+$link-color:		#222;
 $background-color: #f2f4f3;
 $brand-color:      #2a7ae2;
+$card-color: 		#fff;
+$icon-back: 		#677da3;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -23,19 +26,11 @@ $grey-color-dark:  darken($grey-color, 25%);
 // Width of the content area
 $content-width:    800px;
 
-$on-tab:          		600px;
-$on-desktop:        	800px;
+$on-tab:          		768px;
+$on-desktop:        	1024px;
 $on-large-desktop: 		1200px;
 $on-xlarge-desktop: 	1500px;
 
-// Minima also includes a mixin for defining media queries.
-// Use media queries like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 body{
 	background-color: $background-color;
 }
@@ -50,7 +45,7 @@ body{
 	opacity: 0.5;
 }
 .navbar-idea {
-	background: none;
+	background: $background-color;
 }
 
 .main-container{
@@ -58,12 +53,24 @@ body{
 	.main-gitlab-fork, .main-gitlab-star {
 		position: absolute;
 		top: 210px;
+
+		@media screen and (max-width: $on-desktop){
+			top: 160px;
+		}
 	}
 	.main-gitlab-fork{
 		left: 100px;
+
+		@media screen and (max-width: $on-desktop){
+			left: 65px;
+		}
 	}
 	.main-gitlab-star{
 		left: 210px;
+
+		@media screen and (max-width: $on-desktop){
+			left: 175px;
+		}
 	}
 }
 
@@ -84,20 +91,76 @@ body{
 
 	li {
 		font-size: 2em;
+
+		@media screen and (max-width: $on-desktop){
+			font-size: 1.65em;
+		}
 	}
 
 	li .idea {
 		position: absolute;
 		top: 20px;
 		padding-left: 10px;
+
+		@media screen and (max-width: $on-desktop) {
+			top: 10px;
+		}
 	}
 
 	li .icon {
 		width: 72px;
 		height: 72px;
 		padding-top: 10px;
-		background: #677da3;
+		background: $icon-back;
 		color: #fff;
 		text-align: center;
+
+		@media screen and (max-width: $on-desktop){
+			width: 56px;
+			height: 56px;
+			font-size: 1.4em;
+		}
+	}
+
+
+	@media screen and (max-width: $on-desktop){
+		top: 90px;
+		left: 65px;
+		width: 350px;
+		height: 56px;
+	}
+}
+
+.post {
+	background: $card-color;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+
+	h2.post-title {
+		margin-top: 5px;
+		a {
+			color: $link-color;
+		}
+		@media screen and (max-width: $on-tab) {
+			font-size: 1.6em;
+		}
+	}
+
+	.post-meta {
+		padding-bottom: 10px;
+		border-bottom: 2px solid $brand-color;
+
+		.post-author{
+			color: $text-color;
+		}
+
+		.post-date{
+			color: $grey-color;
+		}
+		@media screen and (max-width: $on-tab) {
+			font-size: 1.2em;
+		}
 	}
 }

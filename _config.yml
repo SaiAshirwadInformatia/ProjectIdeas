@@ -34,3 +34,5 @@ exclude:
   - "Gemfile"
   - "bower.json"
   - "js/vendor/owl.carousel/docs_src"
+
+excerpt_separator: <!--more-->

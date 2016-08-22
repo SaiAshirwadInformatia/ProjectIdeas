@@ -1,6 +1,14 @@
-# Generex - JMeter Plugin
+---
+layout: post
+title:  "Generex - JMeter Plugin"
+date:   2016-08-22 08:30:03 +0530
+categories: jmeter plugins
+tags: automation,jmeter,plugins
+author: "Rohan Sakhale"
+---
 
 [Generex](https://github.com/mifmif/Generex) a Java library that helps you generate random strings based on regex that you provide. This makes it efficient for generating pattern based strings everytime.
+<!--more-->
 
 JMeter is a testing tool wherein data is required to test, with Generex the testing data can be made intelligent rather any random strings that validates the use cases in much efficient manner.
 

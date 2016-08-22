@@ -1,7 +1,14 @@
-# Automation with Micro Services
+---
+layout: post
+title:  "Automation with Micro Services"
+date:   2016-08-22 08:20:03 +0530
+categories: microservices
+tags: automation,rest,microservices
+author: "Rohan Sakhale"
+---
 
 There are so many micro activities that every other organisation may require to have and would not expect someone to develop that or would find difficulty in achieving the same.
-
+<!--more-->
 These Micro Services may solely depend on Integrations with Third Party Open Source
 
 ## Give a Read

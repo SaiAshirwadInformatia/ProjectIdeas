@@ -1,7 +1,14 @@
-# Jobs Listing
+---
+layout: post
+title:  "Jobs Listing"
+date:   2016-08-22 08:35:03 +0530
+categories: applications
+tags: jobs,application
+author: "Rohan Sakhale"
+---
 
 We need an application that will give a collaborative listing of jobs that are readily available from MonstersJobs, Indeed, TimesJob, Naukri.
-
+<!--more-->
 This application will serve as a recommendation application that will provide job suggestion at best possible level towards the user requirements, rather showing a huge listing of various other jobs.
 
 ## Features

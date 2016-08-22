@@ -3,7 +3,11 @@ layout: post
 title:  "REST Framework with JMeter"
 date:   2016-08-22 08:35:03 +0530
 categories: jmeter plugins
-tags: automation,jmeter,framework,rest
+tags: 
+    - automation
+    - jmeter
+    - framework
+    - rest
 author: "Rohan Sakhale"
 ---
 

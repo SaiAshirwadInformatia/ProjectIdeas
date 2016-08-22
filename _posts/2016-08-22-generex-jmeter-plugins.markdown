@@ -3,7 +3,10 @@ layout: post
 title:  "Generex - JMeter Plugin"
 date:   2016-08-22 08:30:03 +0530
 categories: jmeter plugins
-tags: automation,jmeter,plugins
+tags: 
+    - automation
+    - jmeter
+    - plugins
 author: "Rohan Sakhale"
 ---
 
@@ -12,7 +15,7 @@ author: "Rohan Sakhale"
 
 JMeter is a testing tool wherein data is required to test, with Generex the testing data can be made intelligent rather any random strings that validates the use cases in much efficient manner.
 
-## Things we can do
+### Things we can do
 
 1. JMeter Function - if Generex made as a function can be used within any Text Field, this way if name/big sentences can be formed with help of Generex
 2. JMeter Config Sampler - with generex we can create variables that are easily accessible by JMeter throughout the Thread Context available as JMeterVariable (vars)

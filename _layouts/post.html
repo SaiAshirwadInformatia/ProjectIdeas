@@ -17,14 +17,19 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12">
-					
+				<div class="col-sm-12">	
+					<div class="actual-post">			
 						<div class="post-meta">
 							<span class="post-author">{{ page.author }}</span> <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
 						</div>
-					<div class="post">
-						<div class="post-excerpt">
+						<div class="post-body">
 							{{ page.content }}
+						</div>
+						<div class="post-tags">
+							<strong>Tags </strong> 
+							{% for tag in page.tags %}
+								<span class="post-tag">{{ tag }}</span>
+							{% endfor %}
 						</div>
 					</div>
 					{% include share.html %}

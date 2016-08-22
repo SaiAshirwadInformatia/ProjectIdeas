@@ -3,7 +3,9 @@ layout: post
 title:  "Jobs Listing"
 date:   2016-08-22 08:35:03 +0530
 categories: applications
-tags: jobs,application
+tags: 
+    - jobs
+    - application
 author: "Rohan Sakhale"
 ---
 
@@ -11,7 +13,7 @@ We need an application that will give a collaborative listing of jobs that are r
 <!--more-->
 This application will serve as a recommendation application that will provide job suggestion at best possible level towards the user requirements, rather showing a huge listing of various other jobs.
 
-## Features
+### Features
 
 1. Combined jobs from all available portals
 1. Enhanced search filters
@@ -20,7 +22,7 @@ This application will serve as a recommendation application that will provide jo
 1. Chrome extension - for jobs notification
 1. Company listing and their reviews > Like glassdoor
 
-## Technologies
+### Technologies
 
 We are open to develop this in any industry demanded technology
 

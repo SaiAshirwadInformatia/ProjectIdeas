@@ -3,7 +3,10 @@ layout: post
 title:  "Automation with Micro Services"
 date:   2016-08-22 08:20:03 +0530
 categories: microservices
-tags: automation,rest,microservices
+tags: 
+    - automation
+    - rest
+    - microservices
 author: "Rohan Sakhale"
 ---
 
@@ -11,7 +14,7 @@ There are so many micro activities that every other organisation may require to 
 <!--more-->
 These Micro Services may solely depend on Integrations with Third Party Open Source
 
-## Give a Read
+### Give a Read
 
 - [Trends in Version Control Land: MicroServices](https://about.gitlab.com/2016/08/16/trends-in-version-control-land-microservices/)
 - [Microservices - by Martin Fowler](http://martinfowler.com/articles/microservices.html#MicroservicesAndSoa)

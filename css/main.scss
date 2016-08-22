@@ -186,6 +186,45 @@ footer {
 	}
 }
 
+.actual-post {
+	
+	.post-meta {
+		padding: 10px;
+
+		.post-author{
+			color: $text-color;
+			font-size: 1.4em;
+		}
+
+		.post-date{
+			color: $grey-color;
+		}
+		@media screen and (max-width: $on-tab) {
+			font-size: 1.2em;
+		}
+	}
+
+	.post-body {
+		background: $card-color;
+		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
+		padding: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
+	.post-tags {
+		padding: 5px;
+		margin-bottom: 10px;
+		.post-tag {
+			background: $brand-color;
+			border-radius: 20px;
+			display: inline-block;
+			padding: 5px 15px;
+			color: #fff;
+		}
+	}
+}
+
 .page-meta {
 	text-align: center;
 	color: #fff;

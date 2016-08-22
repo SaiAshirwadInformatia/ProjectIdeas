@@ -18,14 +18,16 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">
-					<div class="post">
+					
 						<div class="post-meta">
 							<span class="post-author">{{ page.author }}</span> <span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
 						</div>
+					<div class="post">
 						<div class="post-excerpt">
 							{{ page.content }}
 						</div>
 					</div>
+					{% include share.html %}
 					{% include disqus.html %}
 				</div>
 			</div>

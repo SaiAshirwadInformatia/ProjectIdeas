@@ -47,3 +47,7 @@ sitemap:
         - "/posts/"
     change_frequency_name: "change_frequency"
     priority_name: "priority"
+
+monthly_archive:
+  path:
+    - "/archive"

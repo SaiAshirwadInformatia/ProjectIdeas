@@ -25,14 +25,19 @@
 						<div class="post-body">
 							{{ page.content }}
 						</div>
-						<div class="post-tags">
-							<strong>Tags </strong> 
-							{% for tag in page.tags %}
-								<span class="post-tag">{{ tag }}</span>
-							{% endfor %}
-						</div>
-					</div>
-					{% include share.html %}
+						<div class="row">
+							<div class="col-md-8 col-sm-6">
+								<div class="post-tags">
+									<strong>Tags </strong> 
+									{% for tag in page.tags %}
+										<span class="post-tag">{{ tag }}</span>
+									{% endfor %}
+								</div>
+							</div>
+							<div class="col-md-4 col-sm-6 text-right">
+								{% include share.html %}
+							</div>
+					</div>					
 					{% include disqus.html %}
 					{% include subscribe.html %}
 				</div>

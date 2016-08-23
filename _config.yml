@@ -47,8 +47,6 @@ sitemap:
         - "/atom.xml"
         - "/feed.xml"
         - "/feed/index.xml"
-    include_posts:
-        - "/posts/"
     change_frequency_name: "change_frequency"
     priority_name: "priority"
 

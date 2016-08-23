@@ -81,6 +81,7 @@ module Jekyll
         "http://www.sitemaps.org/schemas/sitemap/0.9")
 
       @last_modified_post_date = fill_posts(site, urlset)
+      @last_modified_idea_date = fill_ideas(site, urlset)
       fill_pages(site, urlset)
 
       sitemap.add_element(urlset)
@@ -98,6 +99,24 @@ module Jekyll
 
       # Keep the sitemap.xml file from being cleaned by Jekyll
       site.static_files << Jekyll::SitemapFile.new(site, site.dest, "/", filename)
+    end
+
+    # Create url elements for all the posts and find the date of the latest one
+    #
+    # Returns last_modified_date of latest idea
+    def fill_ideas(site, urlset)
+
+      last_modified_date = nil
+      site.collections["ideas"].docs.each do |idea|
+        
+        url = fill_url(site, idea)
+        urlset.add_element(url)        
+
+        date = File.mtime(idea.path)
+        last_modified_date = date if last_modified_date == nil or date > last_modified_date
+      end
+
+      last_modified_date
     end
 
     # Create url elements for all the posts and find the date of the latest one

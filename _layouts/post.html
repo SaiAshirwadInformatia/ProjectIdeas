@@ -27,11 +27,11 @@
 							</span>
 							<span class="post-read">
 								{% assign words = page.content | number_of_words %}
-								Read Time {% if words < 360 %}
+								{% if words < 360 %}
 								  ~1 min
 								{% else %}
 								  ~{{ words | divided_by:180 }} mins
-								{% endif %}
+								{% endif %} read
 							</span>
 							<span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
 							<span class="post-author">{{ site.data.authors[page.author].name }}</span>

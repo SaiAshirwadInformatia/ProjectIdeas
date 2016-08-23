@@ -8,7 +8,7 @@ layout: default
         <h2 class="idea-title">
           <a class="idea-link" href="{{ idea.url | prepend: site.baseurl }}">{{ idea.title | escape }}</a>
         </h2>
-        <h4 class="idea-meta"><span class="idea-author">{{ idea.author }}</span> <span class="idea-date">{{ idea.date | date: "%b %-d, %Y" }}</span></h4>
+        <h4 class="idea-meta"><span class="idea-author">{{ site.data.authors[idea.author].name }}</span> <span class="idea-date">{{ idea.date | date: "%b %-d, %Y" }}</span></h4>
         <div class="idea-excerpt">{{ idea.excerpt }}</div>
     </div>
   {% endfor %}

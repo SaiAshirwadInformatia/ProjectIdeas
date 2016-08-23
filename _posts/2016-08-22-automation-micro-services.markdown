@@ -7,7 +7,7 @@ tags:
     - automation
     - rest
     - microservices
-author: "Rohan Sakhale"
+author: rsakhale
 ---
 
 There are so many micro activities that every other organisation may require to have and would not expect someone to develop that or would find difficulty in achieving the same.

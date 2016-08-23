@@ -7,7 +7,7 @@ tags:
     - wordpress
     - rest
     - notifications
-author: "Rohan Sakhale"
+author: rsakhale
 ---
 Often there are several notification mechanism, within which wordpress users from a device can subscribe to wordpress for enhanced notification experience.
 <!--more-->

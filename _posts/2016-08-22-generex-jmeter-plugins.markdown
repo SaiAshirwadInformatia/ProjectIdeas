@@ -7,7 +7,7 @@ tags:
     - automation
     - jmeter
     - plugins
-author: "Rohan Sakhale"
+author: rsakhale
 ---
 
 [Generex](https://github.com/mifmif/Generex) a Java library that helps you generate random strings based on regex that you provide. This makes it efficient for generating pattern based strings everytime.

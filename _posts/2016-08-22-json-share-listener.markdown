@@ -9,7 +9,7 @@ tags:
     - plugins
     - json
     - share
-author: "Rohan Sakhale"
+author: rsakhale
 ---
 
 Often there comes an ability of sharing some values from one request and use them into another request to form scenario based testing.

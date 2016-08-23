@@ -8,7 +8,7 @@ tags:
     - jmeter
     - framework
     - rest
-author: "Rohan Sakhale"
+author: rsakhale
 ---
 
 JMeter is a performance testing tool wherein we can perform several types of request.

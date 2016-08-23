@@ -6,7 +6,7 @@ categories: wordpress rest
 tags:
     - wordpress
     - rest
-author: "Rohan Sakhale"
+author: rsakhale
 ---
 Currently what REST API plugins available for WordPress doesn't fulfill the quick requirement of easy REST API that provide the things binded together which would be good for consumption for any third party applications.
 <!--more-->

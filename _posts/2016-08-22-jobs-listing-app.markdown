@@ -6,7 +6,7 @@ categories: applications
 tags: 
     - jobs
     - application
-author: "Rohan Sakhale"
+author: rsakhale
 ---
 
 We need an application that will give a collaborative listing of jobs that are readily available from MonstersJobs, Indeed, TimesJob, Naukri.

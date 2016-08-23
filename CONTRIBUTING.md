@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contribute to Project Ideas
+navigation_weight: 2
 permalink: /contribute/
 ---
 

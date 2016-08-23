@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: idea
 title:  "Generex - JMeter Plugin"
-date:   2016-08-22 08:30:03 +0530
 categories: jmeter plugins
 tags: 
     - automation

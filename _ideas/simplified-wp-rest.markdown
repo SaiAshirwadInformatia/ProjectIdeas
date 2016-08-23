@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: idea
 title:  "Simplified WordPress REST API"
-date:   2016-08-18 10:11:03 +0530
 categories: wordpress rest
 tags:
     - wordpress

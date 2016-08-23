@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: idea
 title:  "REST Framework with JMeter"
-date:   2016-08-22 08:35:03 +0530
 categories: jmeter plugins
 tags: 
     - automation

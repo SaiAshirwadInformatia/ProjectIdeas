@@ -18,14 +18,14 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12">	
-					<div class="actual-post">			
-						<div class="post-meta">
-							<span class="post-category">
+					<div class="actual-idea">			
+						<div class="idea-meta">
+							<span class="idea-category">
 							{% for category in page.categories %}
 								{{ category }}{% unless forloop.last %}, {% endunless %}
 							{% endfor %}
 							</span>
-							<span class="post-read">
+							<span class="idea-read">
 								{% assign words = page.content | number_of_words %}
 								{% if words < 360 %}
 								  ~1 min
@@ -33,27 +33,28 @@
 								  ~{{ words | divided_by:180 }} mins
 								{% endif %} read
 							</span>
-							<span class="post-date">{{ page.date | date: "%b %-d, %Y" }}</span>
-							<span class="post-author">{{ site.data.authors[page.author].name }}</span>
+							<span class="idea-date">{{ page.date | date: "%b %-d, %Y" }}</span>
+							<span class="idea-author">{{ site.data.authors[page.author].name }}</span>
 						</div>
-						<div class="post-body">
+						<div class="idea-body">
 							{{ page.content }}
 						</div>
 						<div class="row">
 							<div class="col-md-8 col-sm-6">
-								<div class="post-tags">
+								<div class="idea-tags">
 									<strong>Tags </strong> 
 									{% for tag in page.tags %}
-										<span class="post-tag">{{ tag }}</span>
+										<span class="idea-tag">{{ tag }}</span>
 									{% endfor %}
 								</div>
 							</div>
 							<div class="col-md-4 col-sm-6 text-right">
 								{% include share.html %}
 							</div>
-					</div>					
+						</div>					
 					{% include disqus.html %}
 					{% include subscribe.html %}
+					</div>
 				</div>
 			</div>
 		</div>

@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: idea
 title:  "Automation with Micro Services"
-date:   2016-08-22 08:20:03 +0530
 categories: microservices
 tags: 
     - automation

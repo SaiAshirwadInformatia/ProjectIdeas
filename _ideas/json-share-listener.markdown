@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: idea
 title:  "JSON Share Listener - JMeter Plugin"
-date:   2016-08-22 08:35:03 +0530
 categories: jmeter plugins
 tags: 
     - automation

@@ -30,6 +30,10 @@ google_analytics: 'UA-54302492-16'
 # Build settings
 markdown: kramdown
 
+collections:
+  ideas:
+    output: true
+
 exclude:
   - "Gemfile"
   - "bower.json"

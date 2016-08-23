@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: idea
 title:  "Jobs Listing"
-date:   2016-08-22 08:35:03 +0530
 categories: applications
 tags: 
     - jobs

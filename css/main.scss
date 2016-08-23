@@ -118,7 +118,7 @@ footer {
 		}
 	}
 
-	li .idea {
+	li .idea-line {
 		position: absolute;
 		top: 20px;
 		padding-left: 10px;
@@ -152,14 +152,14 @@ footer {
 	}
 }
 
-.post {
+.idea {
 	background: $card-color;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 	padding: 10px;
 	margin-top: 10px;
 	margin-bottom: 30px;
 
-	h2.post-title {
+	h2.idea-title {
 		margin-top: 5px;
 		a {
 			color: $link-color;
@@ -169,15 +169,15 @@ footer {
 		}
 	}
 
-	.post-meta {
+	.idea-meta {
 		padding-bottom: 10px;
 		border-bottom: 2px solid $brand-color;
 
-		.post-author{
+		.idea-author{
 			color: $text-color;
 		}
 
-		.post-date{
+		.idea-date{
 			color: $grey-color;
 		}
 		@media screen and (max-width: $on-tab) {
@@ -186,33 +186,33 @@ footer {
 	}
 }
 
-.actual-post {
+.actual-idea {
 	
-	.post-meta {
+	.idea-meta {
 		padding: 10px;
 
-		.post-category, .post-read, .post-author, .post-date{
+		.idea-category, .idea-read, .idea-author, .idea-date{
 			display: inline-block;
 			padding: 2px 5px;
 		}
 
-		.post-category{
+		.idea-category{
 			color: $text-color;
 			font-size: 1.4em;
 		}
 
-		.post-read{
+		.idea-read{
 			color: $grey-color;
 			font-size: 1.3em;
 		}
 
-		.post-author{
+		.idea-author{
 			color: $text-color;
 			font-size: 1.4em;
 			float: right;
 		}
 
-		.post-date{
+		.idea-date{
 			color: $grey-color;
 			font-size: 1.3em;
 			float: right;
@@ -222,7 +222,7 @@ footer {
 		}
 	}
 
-	.post-body {
+	.idea-body {
 		background: $card-color;
 		box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
 		padding: 10px;
@@ -230,10 +230,10 @@ footer {
 		margin-bottom: 10px;
 	}
 
-	.post-tags {
+	.idea-tags {
 		padding: 5px;
 		margin-bottom: 10px;
-		.post-tag {
+		.idea-tag {
 			background: $brand-color;
 			border-radius: 20px;
 			display: inline-block;
@@ -260,7 +260,7 @@ footer {
 	}
 }
 
-ul.post-list {
+ul.idea-list {
 	list-style-type: none;
 	margin-top: 15px;
 	li {

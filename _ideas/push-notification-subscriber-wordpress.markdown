@@ -1,7 +1,6 @@
 ---
-layout: post
+layout: idea
 title:  "Push Notififcation Subscriber WordPress"
-date:   2016-08-18 10:20:03 +0530
 categories: wordpress
 tags: 
     - wordpress

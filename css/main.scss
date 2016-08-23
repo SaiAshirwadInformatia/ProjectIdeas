@@ -191,13 +191,31 @@ footer {
 	.post-meta {
 		padding: 10px;
 
-		.post-author{
+		.post-category, .post-read, .post-author, .post-date{
+			display: inline-block;
+			padding: 2px 5px;
+		}
+
+		.post-category{
 			color: $text-color;
 			font-size: 1.4em;
 		}
 
+		.post-read{
+			color: $grey-color;
+			font-size: 1.3em;
+		}
+
+		.post-author{
+			color: $text-color;
+			font-size: 1.4em;
+			float: right;
+		}
+
 		.post-date{
 			color: $grey-color;
+			font-size: 1.3em;
+			float: right;
 		}
 		@media screen and (max-width: $on-tab) {
 			font-size: 1.2em;

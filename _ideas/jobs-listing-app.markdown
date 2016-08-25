@@ -1,6 +1,8 @@
 ---
 layout: idea
 title:  "Jobs Listing"
+description: 'Jobs Listing'
+image: /images/big-back-1.jpg
 categories: applications
 tags: 
     - jobs

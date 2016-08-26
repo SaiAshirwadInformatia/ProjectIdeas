@@ -10,17 +10,29 @@
       <a class="navbar-brand" href="{{ site.baseurl }}/">{{ site.title }}</a>
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <div class="col-sm-7">
       <ul class="nav navbar-nav">
         {% assign navigation_pages = site.pages | sort: 'navigation_weight' %}
         {% for p in navigation_pages %}
-          {% if p.navigation_weight %}
-            <li {% if p.url == page.url %}class="active"{% endif %}>
-              <a href="{{ site.baseurl }}{{ p.url }}">
-                {{ p.title }}
-              </a>
-            </li>
-          {% endif %}
+        {% if p.navigation_weight %}
+        <li {% if p.url == page.url %}class="active"{% endif %}>
+          <a href="{{ site.baseurl }}{{ p.url }}">
+            {{ p.title }}
+          </a>
+        </li>
+        {% endif %}
         {% endfor %}
-       </ul>
+      </ul>
+      </div>
+      <div class="col-sm-3 pull-right" id="searching">
+      <form action="{{ site.baseurl }}/search.html" method="get">
+        <div class="input-group">
+          <input type="text" class="form-control" name="query" id="search-box" placeholder="Search for...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">Go!</button>
+          </span>
+        </div>
+      </form>
+      </div>
   </div>
 </nav>

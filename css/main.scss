@@ -95,6 +95,18 @@ footer {
 			left: 175px;
 		}
 	}
+	.main-gitlab-star img{
+		@media screen and (max-width: $on-mobile){
+			width: 80%;
+			padding: 5px;
+		}
+	}
+	.main-gitlab-fork img{
+		@media screen and (max-width: $on-mobile){
+			width: 80%;
+			padding: 5px;
+		}
+	}
 }
 
 #idea-thoughts {
@@ -156,7 +168,7 @@ footer {
 		height: 33px!important;
 	    width: 248px!important;
 	    top: 55px!important;
-	    left: 10px!important;
+	    left: 43px!important;
 	}
 	@media screen and (max-width: $on-desktop){
 		top: 90px;

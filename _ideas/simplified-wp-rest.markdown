@@ -1,7 +1,9 @@
 ---
 layout: idea
 title:  "Simplified WordPress REST API"
-categories: wordpress rest
+categories: 
+    - wordpress
+    - rest
 tags:
     - wordpress
     - rest

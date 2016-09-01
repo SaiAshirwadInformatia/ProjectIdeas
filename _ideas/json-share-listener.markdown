@@ -1,7 +1,8 @@
 ---
 layout: idea
 title:  "JSON Share Listener - JMeter Plugin"
-categories: jmeter plugins
+categories: 
+    - jmeter plugins
 tags: 
     - automation
     - jmeter

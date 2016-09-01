@@ -1,7 +1,8 @@
 ---
 layout: idea
 title:  "Jobs Listing"
-categories: applications
+categories: 
+    - applications
 tags: 
     - jobs
     - application

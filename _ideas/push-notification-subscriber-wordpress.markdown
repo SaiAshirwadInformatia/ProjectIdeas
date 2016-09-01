@@ -1,7 +1,8 @@
 ---
 layout: idea
 title:  "Push Notififcation Subscriber WordPress"
-categories: wordpress
+categories: 
+    - wordpress
 tags: 
     - wordpress
     - rest

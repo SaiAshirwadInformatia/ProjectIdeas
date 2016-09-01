@@ -1,16 +1,19 @@
 ---
 layout:   default
-title:    Category
+title:    Categories
+permalink: /categories/
 ---
 {% comment%}
 Here we generate all the categories.
 {% endcomment%}
 
-{% assign rawcats = "" %}
+{% assign rawcats = "" | split: '' %}
 {% for idea in site.ideas %}
 {% assign tcats = idea.category | join:'|' | append:'|' %}
 {% assign rawcats = rawcats | append:tcats %}
 {% endfor %}
+
+<h1>{{ rawcats | jsonify }} - {{ site.rohan }}</h1>
 
 {% assign rawcats = rawcats | split:'|' | sort %}
 

@@ -1,7 +1,8 @@
 ---
 layout: idea
 title:  "Automation with Micro Services"
-categories: microservices
+categories:
+    - microservices
 tags: 
     - automation
     - rest

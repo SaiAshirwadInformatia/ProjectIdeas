@@ -24,13 +24,14 @@ module JekyllPlugins
 		end
 
 		def generateCategories(site)
-			categoriesList = []
+			categoriesList = {}
 			site.collections['ideas'].docs.each do |idea|
 				
 				idea['categories'].each do |cat|
-					unless categoriesList.include? cat
-						categoriesList.push(cat)
-					end
+					unless categoriesList.key? cat
+						categoriesList[cat] = []
+					end 
+					categoriesList[cat].push(idea)
 				end
 				
 			end

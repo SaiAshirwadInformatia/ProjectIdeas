@@ -1,3 +1,4 @@
+# Customized Plugins for idea collections
 module JekyllPlugins
 	class IdeaCategoryPage < Jekyll::Page
 		def initialize(site, base, dir)

@@ -1,6 +1,8 @@
 ---
 layout: idea
 title:  "Simplified WordPress REST API"
+description: 'Simplified WordPress REST API'
+image: /images/big-back-1.jpg
 categories: wordpress rest
 tags:
     - wordpress

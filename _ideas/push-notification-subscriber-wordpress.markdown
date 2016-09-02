@@ -1,6 +1,8 @@
 ---
 layout: idea
 title:  "Push Notififcation Subscriber WordPress"
+description: 'Push Notififcation Subscriber WordPress'
+image: /images/big-back-1.jpg
 categories: wordpress
 tags: 
     - wordpress

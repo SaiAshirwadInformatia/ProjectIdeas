@@ -1,6 +1,8 @@
 ---
 layout: idea
 title:  "JSON Assertor - JMeter Plugin"
+description: 'JSON Assertor - JMeter Plugin'
+image: /images/big-back-1.jpg
 categories: jmeter plugins
 tags: 
     - automation

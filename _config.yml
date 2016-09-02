@@ -53,3 +53,6 @@ sitemap:
 monthly_archive:
   path:
     - "/archive"
+
+gems:
+  - jekyll-seo-tag

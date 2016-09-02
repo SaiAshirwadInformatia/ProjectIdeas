@@ -12,7 +12,7 @@ Here we generate all the categories.
   <ul>
   {% for idea in category[1] %}
     <li>
-      <h4><a href="{{baseurl}}{{ idea.url }}">
+      <h4><a href="{{site.baseurl}}{{ idea.url }}">
         {{ idea.title }}
         <small>{{ idea.date | date_to_string }}</small>
       </a></h4>

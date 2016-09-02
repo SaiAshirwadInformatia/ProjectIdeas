@@ -33,10 +33,13 @@ $on-xlarge-desktop: 	1500px;
 
 body{
 	background-color: $background-color;
+	margin: 0;
+	padding: 0;
 }
 footer {
 	background-color: $grey-color;
 	padding: 20px;
+	width: 100%;
 	color: #fff;
 	margin-top: 10px;
 	padding-bottom: 0;

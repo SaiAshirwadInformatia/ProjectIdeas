@@ -3,6 +3,8 @@ layout: idea
 title:  "Automation with Micro Services"
 categories:
     - microservices
+description: 'Automation with Micro Services'
+image: /images/big-back-1.jpg
 tags: 
     - automation
     - rest

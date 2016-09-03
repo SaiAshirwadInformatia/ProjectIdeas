@@ -3,6 +3,8 @@ layout: idea
 title:  "JSON Share Listener - JMeter Plugin"
 categories: 
     - jmeter plugins
+description: 'JSON Share Listener - JMeter Plugin'
+image: /images/big-back-1.jpg
 tags: 
     - automation
     - jmeter

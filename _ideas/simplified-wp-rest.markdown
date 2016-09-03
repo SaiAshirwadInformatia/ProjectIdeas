@@ -4,6 +4,8 @@ title:  "Simplified WordPress REST API"
 categories: 
     - wordpress
     - rest
+description: 'Simplified WordPress REST API'
+image: /images/big-back-1.jpg
 tags:
     - wordpress
     - rest

@@ -14,12 +14,12 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Project Ideas
-email: connect@saiashirwad.com
+email: support@saiashirwad.com
 description: > # this means to ignore newlines until "baseurl:"
   Open Source your Idea and let community start building 
   a new Open Source that benefits the community
-baseurl: "/ProjectIdeas" # the subpath of your site, e.g. /blog
-url: "https://saiashirwadinformatia.gitlab.io/ProjectIdeas" # the base hostname & protocol for your site
+baseurl: "/" # the subpath of your site, e.g. /blog
+url: "https://ideas.saiashirwad.org" # the base hostname & protocol for your site
 gitlab_url: "https://gitlab.com/SaiAshirwadInformatia/ProjectIdeas"
 twitter_username: SaiAshirwadInfo
 github_username:  SaiAshirwadInformatia

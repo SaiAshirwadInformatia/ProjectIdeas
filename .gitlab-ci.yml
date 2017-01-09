@@ -18,7 +18,7 @@ cache:
 test:
   stage: test
   script:
-  - jekyll build -d test
+  - bundle exec jekyll build -d test
   artifacts:
     paths:
     - test
@@ -28,7 +28,7 @@ test:
 pages:
   stage: deploy
   script:
-  - jekyll build -d public
+  - bundle exec jekyll build -d public
   - chmod +x cert.sh
   - sh cert.sh
   artifacts:

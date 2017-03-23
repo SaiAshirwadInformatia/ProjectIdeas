@@ -3,6 +3,7 @@
 image: saiashirwadinformatia/jekyll-bower:v1
 before_script:
   - bundle install --path=.bundler-cache
+  - npm install -g ftpsync
 
 cache:
   paths:
@@ -29,8 +30,7 @@ pages:
   stage: deploy
   script:
   - bundle exec jekyll build -d public
-  - chmod +x cert.sh
-  - sh cert.sh
+  - ftpsync -l ./public -r / -h $FTP_HOST -u $FTP_USERNAME -s $FTP_PASSWORD
   artifacts:
     paths:
     - public

@@ -18,9 +18,9 @@ email: support@saiashirwad.com
 description: > # this means to ignore newlines until "baseurl:"
   Open Source your Idea and let community start building 
   a new Open Source that benefits the community
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://ideas.saiashirwad.org" # the base hostname & protocol for your site
-gitlab_url: "https://gitlab.com/SaiAshirwadInformatia/ProjectIdeas"
+gitlab_url: "https://gitlab.com/SaiAshirwadInformatia/Labs/ProjectIdeas"
 twitter_username: SaiAshirwadInfo
 github_username:  SaiAshirwadInformatia
 gitlab_username: SaiAshirwadInformatia

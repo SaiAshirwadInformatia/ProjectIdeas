@@ -56,3 +56,4 @@ monthly_archive:
 
 gems:
   - jekyll-seo-tag
+  - jekyll-bower

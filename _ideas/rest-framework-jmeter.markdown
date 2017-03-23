@@ -1,7 +1,8 @@
 ---
 layout: idea
 title:  "REST Framework with JMeter"
-categories: jmeter plugins
+categories: 
+    - jmeter plugins
 tags: 
     - automation
     - jmeter

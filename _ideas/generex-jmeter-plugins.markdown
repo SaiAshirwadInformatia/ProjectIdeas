@@ -1,9 +1,10 @@
 ---
 layout: idea
 title:  "Generex - JMeter Plugin"
+categories:
+    - jmeter plugins
 description: 'Generex - JMeter Plugin'
 image: /images/big-back-1.jpg
-categories: jmeter plugins
 tags: 
     - automation
     - jmeter

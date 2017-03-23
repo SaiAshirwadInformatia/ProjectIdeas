@@ -2,6 +2,37 @@ rsakhale:
   name: Rohan Sakhale
   email: rs@saiashirwad.com
   twitter_handle: RohanSakhale
+  bio: >
+    I am a Passionate Developer and Loves Teaching.
+    Experienced PHP/Java Developer with an ability of bringing your idea to existence
+  gitlab_username: rsakhale
+  github_username: RohanSakhale
+  linkedin_url: https://in.linkedin.com/in/rsakhale
+  skills:
+    php:
+      experience: intermediate
+      years: 4
+      frameworks:
+        - codeigniter
+        - laravel
+    java:
+      experience: intermediate
+      years: 4
+      frameworks: 
+        - spring
+        - hibernate
+        - testng
+
 cpatil:
   name: Chaitali Patil
   email: cpatil@saiashirwad.com
+  gitlab_username: cpatil
+  github_username: chaitalipatil
+  linkedin_url: https://in.linkedin.com/in/chaitali-patil-155397a3
+  skills:
+    php:
+      experience: intermediate
+      years: 2
+      frameworks:
+        - codeigniter
+        - laravel
